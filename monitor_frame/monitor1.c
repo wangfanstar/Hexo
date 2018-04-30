@@ -4,12 +4,12 @@ int main(int argc, char * argv[])
 {
     funA();
     return 0;
-    }
+}
 
 void funA()
 {
     int i;
-    int times;
+    int times=0;
     for (i = 0; i < 10000; i++)
     {
         if (i % 100 == 0) // 未处理溢出
