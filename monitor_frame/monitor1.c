@@ -5,7 +5,10 @@ int main(int argc, char * argv[])
     funA();
     return 0;
 }
-
+void funB()
+{
+    return;
+}
 void funA()
 {
     int i;
