@@ -1,4 +1,4 @@
-obj-m = printk.o
+obj-m = wf_printk.o
 PWD := $(shell pwd)
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules

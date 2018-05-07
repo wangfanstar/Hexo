@@ -1,0 +1,1 @@
+cmd_/home/wangfan/CloudStation/code/Hexo/kernel_module/wf_printk.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/wangfan/CloudStation/code/Hexo/kernel_module/wf_printk.ko /home/wangfan/CloudStation/code/Hexo/kernel_module/wf_printk.o /home/wangfan/CloudStation/code/Hexo/kernel_module/wf_printk.mod.o ;  true

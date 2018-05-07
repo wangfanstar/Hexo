@@ -1,20 +1,31 @@
 #include <stdio.h>
-void funA();
+void funA(int a);
+void funB(int a);
 int main(int argc, char * argv[])
 {
-    funA();
+    funA(1000);
+    funB(1000);
     return 0;
 }
 
-void funB()
-{
-    return;
-}
-void funA()
+void funB(int a)
 {
     int i;
     int times=0;
-    for (i = 0; i < 10000; i++)
+    for (i = 0; i < a; i++)
+    {
+        if (i % 500 == 0) 
+        {
+            printf("fun B 500 %d times\n",  ++times);
+        }
+    }
+    return ;
+}
+void funA(int a)
+{
+    int i;
+    int times=0;
+    for (i = 0; i < a; i++)
     {
         if (i % 100 == 0) 
         {
